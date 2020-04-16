@@ -1,0 +1,29 @@
+.box {
+  position: relative;
+  background-color: gray;
+  height: 100px;
+  width: 80%;
+  overflow: hidden;
+  margin-left: 100px;
+}
+
+.block {
+  position: absolute;
+  font-size: 2em;
+  animation: barrage 10s linear 0s;
+  white-space: nowrap;
+  border: 1px solid black;
+  padding: 10px;
+}
+
+@keyframes barrage {
+  from {
+    left: 100%;
+    transform: translateX(0);
+  }
+
+  to {
+    left: 0;
+    transform: translateX(-100%);
+  }
+}
